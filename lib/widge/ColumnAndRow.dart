@@ -242,7 +242,7 @@ class _TabTitleListDemoState extends State<TabTitleListDemo>
 class TabBarListScrollView extends StatefulWidget {
   // const TabBarListScrollView({Key? key}) : super(key: key);
 
-  List<Widget> widgets = [FlutterView(), AndroidView(), IOSView()];
+  List<Widget> widgets = [FlutterView(), AndroidViewOne(), IOSView()];
   @override
   _TabBarListScrollViewState createState() => _TabBarListScrollViewState();
 }
@@ -251,7 +251,7 @@ class _TabBarListScrollViewState extends State<TabBarListScrollView>
     with SingleTickerProviderStateMixin {
   List tabs = ["Flutter", "Android", "IOS"];
   late TabController _controller;
-  int _selectIndex = 1;
+  int _selectIndex = 0;
   @override
   void initState() {
     // TODO: implement initState
@@ -324,8 +324,8 @@ class FlutterView extends StatelessWidget {
   }
 }
 
-class AndroidView extends StatelessWidget {
-  const AndroidView({Key? key}) : super(key: key);
+class AndroidViewOne extends StatelessWidget {
+  const AndroidViewOne({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

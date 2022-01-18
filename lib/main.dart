@@ -3,6 +3,7 @@ import 'package:flutter_2022_learn/widge/TextLearnDemo.dart';
 import 'package:flutter_2022_learn/widge/Login.dart';
 import 'package:flutter_2022_learn/widge/routeSetMain.dart';
 import 'package:flutter_2022_learn/widge/ColumnAndRow.dart';
+import 'package:flutter_2022_learn/widge/BottomTabBar.dart';
 
 main() {
   runApp(MyApp());
@@ -24,12 +25,14 @@ class MyApp extends StatelessWidget {
         "ColumnAndRow": (context) => ColumnAndRow(),
         "WrapLayout": (context) => WrapLayout(),
         "TabTitleListDemo": (context) => TabTitleListDemo(),
-        "TabBarListScrollView": (context) => TabBarListScrollView()
+        "TabBarListScrollView": (context) => TabBarListScrollView(),
+        "BottomTabBarDemo": (context) => BottomTabBarDemo(),
+        "BottomAppBarDemo": (context) => BottomAppBarDemo()
       },
       theme: ThemeData(primarySwatch: Colors.yellow), // 修改主题颜色
       // darkTheme: ThemeData(
       //     brightness: Brightness.dark, primarySwatch: Colors.deepPurple),
-      initialRoute: "TabBarListScrollView",
+      initialRoute: "BottomAppBarDemo",
       // initialRoute: "WrapLayout",
     );
   }
